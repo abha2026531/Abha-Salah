@@ -19,10 +19,31 @@
         <b>الذكاء الاصطناعي:</b> هو سلوك وخصائص معينة تتسم بها البرامج الحاسوبية، تجعلها تحاكي القدرات الذهنية البشرية.
     </p>
 
-    <!-- وسم إدراج الصور -->
-    <center>
-        <img src="p1.jpg" width="400" height="250" alt="مفهوم الذكاء الاصطناعي">
-    </center>
+    <!-- 2. صورة تفاعلية معدلة (Image Map) -->
+<fieldset>
+  <legend>صورة تفاعلية (اضغط على أجزاء اللوحة الإلكترونية للتفاصيل)</legend>
+  
+  <!-- وسم الصورة مع استخدام خاصية usemap -->
+  <img src="https://example.com/cyber-board.jpg" 
+       alt="Circuit Board" 
+       usemap="#workmap" 
+       width="100%" 
+       style="cursor: help;" 
+       id="cyber-image">
+
+  <!-- خريطة الصورة التفاعلية (Image Map) -->
+  <map name="workmap">
+    <!-- منطقة تفاعلية 1: الدوائر المتكاملة (IC) في الوسط -->
+    <area shape="rect" coords="200,50,450,150" alt="IC" href="#" onclick="alert('هذه هي وحدة المعالجة المركزية (CPU)، قلب النظام!'); return false;">
+    
+    <!-- منطقة تفاعلية 2: المكثفات على اليسار -->
+    <area shape="circle" coords="100,200,50" alt="Capacitor" href="#" onclick="alert('هذه هي المكثفات لتخزين الطاقة!'); return false;">
+    
+    <!-- منطقة تفاعلية 3: المقاومات على اليمين -->
+    <area shape="poly" coords="500,200,600,180,600,220" alt="Resistor" href="#" onclick="alert('هذه المقاومات للتحكم بالجهد!'); return false;">
+  </map>
+</fieldset>
+
 
     <!-- وسم القوائم غير المرتبة (النقطية) -->
     <h3>أبرز مجالات الذكاء الاصطناعي:</h3>
